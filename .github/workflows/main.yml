@@ -1,9 +1,8 @@
 name: smartgpg-test-applet
 
-# Run this workflow every time a new commit pushed to your repository
-on: 
-  push:
-  workflow_dispatch:
+on:
+  push:           # runs on every push (to any branch)
+  workflow_dispatch:  # allows manual triggering from GitHub UI
 
 jobs:
   applet_tests:
